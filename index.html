@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation Based on Time</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: url("D:\Movie-Recommendation-System\images") no-repeat
+          center center fixed;
+        background-size: cover;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #ff6347;
+        margin-bottom: 20px;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      select,
+      button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      select {
+        background-color: #333;
+        color: #fff;
+      }
+
+      button {
+        background-color: #ff6347;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e5533c;
+        transform: scale(1.1);
+      }
+
+      .time-genre-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .genres-list,
+      .movie-list {
+        margin-top: 20px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Updated Movie Cards */
+      .movie-item {
+        background: linear-gradient(
+          120deg,
+          #ffe7c5,
+          #ffccb7
+        ); /* Updated color */
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        color: #333;
+        font-family: "Arial", sans-serif;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .movie-item:hover {
+        background: linear-gradient(120deg, #ffd5a9, #ffb79d); /* Hover color */
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .toggle-dark-mode {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #ff6347;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .toggle-dark-mode:hover {
+        transform: rotate(15deg) scale(1.1);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Dark Mode Styles */
+      .dark-mode {
+        background-color: #2e2e2e;
+        color: #fff;
+      }
+
+      .dark-mode select {
+        background-color: #444;
+        color: #fff;
+      }
+
+      .dark-mode button {
+        background-color: #ff6347;
+        color: #fff;
+      }
+
+      .dark-mode .movie-item {
+        background: linear-gradient(120deg, #444, #666); /* Dark mode colors */
+        color: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .dark-mode .movie-item:hover {
+        background: linear-gradient(120deg, #555, #777); /* Dark mode hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CINEMATCH 🎥🍿</h1>
+
+    <div class="time-genre-container">
+      <label for="time">Choose the time you want to watch a movie:</label>
+      <select id="time">
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+        <option value="night">Night</option>
+      </select>
+
+      <button onclick="showGenres()">Show Genres</button>
+    </div>
+
+    <p id="timeMessage" style="margin-top: 10px; font-style: italic"></p>
+    <div class="genres-list" id="genresList"></div>
+    <div class="movie-list" id="movies_list"></div>
+
+    <button class="toggle-dark-mode" onclick="toggleDarkMode()">
+      Dark Mode
+    </button>
+
+    <script>
+      const genresByTime = {
+        morning: [
+          { name: "Motivational", recommended: true },
+          { name: "Comedy", recommended: false },
+        ],
+        afternoon: [
+          { name: "Action", recommended: true },
+          { name: "Adventure", recommended: false },
+        ],
+        evening: [
+          { name: "Romantic", recommended: true },
+          { name: "Fantasy", recommended: false },
+        ],
+        night: [
+          { name: "Horror", recommended: true },
+          { name: "Thriller", recommended: false },
+        ],
+      };
+
+      const timeMessages = {
+        morning: "Start your day with motivational or light-hearted movies!",
+        afternoon: "Action-packed adventures to keep your energy up!",
+        evening: "Relax with romantic or magical stories!",
+        night: "End your day with thrillers or spooky mysteries!",
+      };
+
+      function showGenres() {
+        const timeOfDay = document.getElementById("time").value;
+        const genres = genresByTime[timeOfDay];
+        const genreList = document.getElementById("genresList");
+        const timeMessage = document.getElementById("timeMessage");
+
+        genreList.innerHTML = "";
+        timeMessage.textContent = timeMessages[timeOfDay];
+        document.getElementById("movies_list").innerHTML = "";
+
+        if (genres) {
+          const genreDropdown = document.createElement("select");
+          genreDropdown.id = "genreDropdown";
+
+          genres.forEach((genre) => {
+            const option = document.createElement("option");
+            option.value = genre.name.toLowerCase();
+            option.textContent =
+              genre.name + (genre.recommended ? " - Recommended" : "");
+            genreDropdown.appendChild(option);
+          });
+
+          genreList.appendChild(genreDropdown);
+
+          const showMoviesButton = document.createElement("button");
+          showMoviesButton.textContent = "Show Movies";
+          showMoviesButton.onclick = showMovies;
+          genreList.appendChild(showMoviesButton);
+        }
+      }
+
+      async function showMovies() {
+        const selectedGenre = document.getElementById("genreDropdown").value;
+        const movies_list = document.getElementById("movies_list");
+        movies_list.innerHTML = "";
+
+        try {
+          const response = await fetch("/recommend", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ genre: selectedGenre }),
+          });
+
+          const data = await response.json();
+
+          if (data.movies && data.movies.length > 0) {
+            data.movies.forEach((movie) => {
+              const movieItem = document.createElement("div");
+              movieItem.className = "movie-item";
+
+              // Add a checkbox
+              const checkbox = document.createElement("input");
+              checkbox.type = "checkbox";
+              checkbox.style.marginRight = "10px";
+              checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                  movieItem.remove(); // Remove the movie item when checked
+                }
+              });
+
+              // Create a span for movie details
+              const movieDetails = document.createElement("span");
+              movieDetails.innerHTML = `<strong>${movie.title}</strong> - ${movie.genres} <br> <em>${movie.overview}</em>`;
+
+              // Append checkbox and movie details to the movie item
+              movieItem.appendChild(checkbox);
+              movieItem.appendChild(movieDetails);
+
+              // Append the movie item to the list
+              movies_list.appendChild(movieItem);
+            });
+          } else {
+            movies_list.innerHTML =
+              "<p>No movies available for this genre.</p>";
+          }
+        } catch (error) {
+          console.error("Error fetching movies:", error);
+          movies_list.innerHTML =
+            "<p>Error fetching movies. Please try again later.</p>";
+        }
+      }
+
+      // async function showMovies() {
+      //   const selectedGenre = document.getElementById("genreDropdown").value;
+      //   const movies_list = document.getElementById("movies_list");
+      //   movies_list.innerHTML = "";
+
+      //   try {
+      //     const response = await fetch("/recommend", {
+      //       method: "POST",
+      //       headers: { "Content-Type": "application/json" },
+      //       body: JSON.stringify({ genre: selectedGenre }),
+      //     });
+
+      //     const data = await response.json();
+
+      //     if (data.movies && data.movies.length > 0) {
+      //       data.movies.forEach((movie) => {
+      //         const movieItem = document.createElement("div");
+      //         movieItem.className = "movie-item";
+
+      //         // Add a checkbox
+      //         const checkbox = document.createElement("input");
+      //         checkbox.type = "checkbox";
+      //         checkbox.style.marginRight = "10px";
+      //         checkbox.addEventListener("change", () => {
+      //           if (checkbox.checked) {
+      //             movieItem.remove(); // Remove the movie item when checked
+      //           }
+      //         });
+
+      //         movieItem.appendChild(checkbox);
+      //         movieItem.innerHTML += `<strong>${movie.title}</strong> - ${movie.genres} <br> <em>${movie.overview}</em>`;
+      //         movies_list.appendChild(movieItem);
+      //       });
+      //     } else {
+      //       movies_list.innerHTML =
+      //         "<p>No movies available for this genre.</p>";
+      //     }
+      //   } catch (error) {
+      //     console.error("Error fetching movies:", error);
+      //     movies_list.innerHTML =
+      //       "<p>Error fetching movies. Please try again later.</p>";
+      //   }
+      // }
+
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        const isDarkMode = document.body.classList.contains("dark-mode");
+        document.querySelector(".toggle-dark-mode").textContent = isDarkMode
+          ? " Light Mode"
+          : " Dark Mode";
+      }
+    </script>
+  </body>
+</html>
