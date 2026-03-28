@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Recommendation</title>
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6347;
+    }
+
+    select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    select {
+      background-color: #333;
+      color: #fff;
+    }
+
+    button {
+      background-color: #ff6347;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e5533c;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .movie-item {
+      background: #fff;
+      padding: 15px;
+      margin: 10px auto;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .dark-mode {
+      background-color: #2e2e2e;
+      color: #fff;
+    }
+
+    .dark-mode .movie-item {
+      background: #444;
+      color: #fff;
+    }
+
+    .toggle-dark-mode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #ff6347;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎬 CineMatch</h1>
+
+  <div class="container">
+    <label>Select time:</label>
+    <select id="time">
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+      <option value="night">Night</option>
+    </select>
+
+    <button onclick="showGenres()">Show Genres</button>
+
+    <p id="timeMessage"></p>
+    <div id="genresList"></div>
+    <div id="movies_list"></div>
+  </div>
+
+  <button class="toggle-dark-mode" onclick="toggleDarkMode()">
+    Dark Mode
+  </button>
+
+<script>
+const genresByTime = {
+  morning: ["motivational", "comedy"],
+  afternoon: ["action", "adventure"],
+  evening: ["romantic", "fantasy"],
+  night: ["horror", "thriller"]
+};
+
+const timeMessages = {
+  morning: "Start your day with light movies!",
+  afternoon: "Enjoy action-packed movies!",
+  evening: "Relax with romantic movies!",
+  night: "Watch thrilling movies!"
+};
+
+function showGenres() {
+  const time = document.getElementById("time").value;
+  const genres = genresByTime[time];
+  const container = document.getElementById("genresList");
+
+  container.innerHTML = "";
+  document.getElementById("timeMessage").innerText = timeMessages[time];
+  document.getElementById("movies_list").innerHTML = "";
+
+  const dropdown = document.createElement("select");
+  dropdown.id = "genreDropdown";
+
+  genres.forEach(g => {
+    const option = document.createElement("option");
+    option.value = g;
+    option.textContent = g;
+    dropdown.appendChild(option);
+  });
+
+  container.appendChild(dropdown);
+
+  const btn = document.createElement("button");
+  btn.textContent = "Get Recommendations";
+  btn.onclick = showMovies;
+
+  container.appendChild(btn);
+}
+
+async function showMovies() {
+  const genre = document.getElementById("genreDropdown").value;
+  const container = document.getElementById("movies_list");
+
+  container.innerHTML = "Loading...";
+
+  try {
+    const res = await fetch("/recommend", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ genre: genre })
+    });
+
+    const data = await res.json();
+    container.innerHTML = "";
+
+    if (data.movies.length === 0) {
+      container.innerHTML = "<p>No movies found.</p>";
+      return;
+    }
+
+    data.movies.forEach(movie => {
+      const div = document.createElement("div");
+      div.className = "movie-item";
+      div.innerHTML = `
+        <h3>${movie.title}</h3>
+        <p><b>Genre:</b> ${movie.genres}</p>
+        <p>${movie.overview}</p>
+      `;
+      container.appendChild(div);
+    });
+
+  } catch (err) {
+    container.innerHTML = "Error loading movies.";
+  }
+}
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
