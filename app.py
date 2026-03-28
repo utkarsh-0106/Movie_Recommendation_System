@@ -1,3 +1,4 @@
+print("🔥 APP FILE LOADED")
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import os
@@ -49,10 +50,9 @@ def recommend_movies():
         return jsonify({'error': 'Something went wrong'}), 500
 
 # Optional debug route (you can remove later)
-@app.route('/test')
-def test():
-    return "App is working!"
-
+@app.route('/')
+def index():
+    return "HOME WORKING"
 # Run locally (Render uses Gunicorn instead)
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
