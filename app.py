@@ -1,16 +1,19 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
+import os
 
 app = Flask(__name__)
 
-# Load movie dataset
+# Load movie dataset safely
 try:
-    movies_list_df = pd.read_csv('movies_list.csv')
-    print("Movies dataset loaded successfully.")
+    file_path = os.path.join(os.path.dirname(__file__), 'movies_list.csv')
+    movies_list_df = pd.read_csv(file_path)
+    print("✅ Movies dataset loaded successfully.")
 except Exception as e:
-    print("Error loading movies dataset:", e)
-    movies_list_df = pd.DataFrame()  # Create an empty DataFrame to prevent app crash
+    print("❌ Error loading movies dataset:", e)
+    movies_list_df = pd.DataFrame()
 
+# Home route
 @app.route('/')
 def index():
     if not movies_list_df.empty:
@@ -19,24 +22,31 @@ def index():
     else:
         return "Movies dataset could not be loaded.", 500
 
+# Recommendation API
 @app.route('/recommend', methods=['POST'])
 def recommend_movies():
-    data = request.json
-    genre = data.get('genre')
+    try:
+        data = request.get_json()
+        genre = data.get('genre', '').lower()
 
-    if not genre:
-        return jsonify({'error': 'Please provide a genre'}), 400
+        if not genre:
+            return jsonify({'error': 'Please provide a genre'}), 400
 
-    # Filter movies based on the genre
-    filtered_movies = movies_list_df[
-        movies_list_df['genres'].str.lower().str.contains(genre, na=False)
-    ]
+        filtered_movies = movies_list_df[
+            movies_list_df['genres'].str.lower().str.contains(genre, na=False)
+        ]
 
-    if filtered_movies.empty:
-        return jsonify({'movies': []})
+        if filtered_movies.empty:
+            return jsonify({'movies': []})
 
-    recommended_movies = filtered_movies[['title', 'genres', 'overview']].to_dict(orient='records')
-    return jsonify({'movies': recommended_movies})
+        recommended_movies = filtered_movies[['title', 'genres', 'overview']].to_dict(orient='records')
 
+        return jsonify({'movies': recommended_movies})
+
+    except Exception as e:
+        print("❌ Error in recommendation:", e)
+        return jsonify({'error': 'Something went wrong'}), 500
+
+# For local development only
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
