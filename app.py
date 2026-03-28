@@ -3,6 +3,7 @@ import pandas as pd
 import os
 
 app = Flask(__name__)
+application = app   # 🔥 IMPORTANT for Gunicorn
 
 # Load movie dataset safely
 try:
@@ -47,7 +48,12 @@ def recommend_movies():
         print("❌ Error in recommendation:", e)
         return jsonify({'error': 'Something went wrong'}), 500
 
-# For local development only
+# Optional debug route (you can remove later)
+@app.route('/test')
+def test():
+    return "App is working!"
+
+# Run locally (Render uses Gunicorn instead)
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
