@@ -1,30 +1,34 @@
-print("🔥 APP FILE LOADED")
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import os
 
 app = Flask(__name__)
-application = app   # 🔥 IMPORTANT for Gunicorn
 
 # Load movie dataset safely
+# Ensure the name below matches your actual file name in GitHub!
+CSV_FILENAME = 'movies.csv' 
+
 try:
-    file_path = os.path.join(os.path.dirname(__file__), 'movies_list.csv')
-    movies_list_df = pd.read_csv(file_path)
-    print("✅ Movies dataset loaded successfully.")
+    file_path = os.path.join(os.path.dirname(__file__), CSV_FILENAME)
+    if os.path.exists(file_path):
+        movies_list_df = pd.read_csv(file_path)
+        print(f"✅ {CSV_FILENAME} loaded successfully.")
+    else:
+        print(f"❌ {CSV_FILENAME} NOT FOUND at {file_path}")
+        movies_list_df = pd.DataFrame()
 except Exception as e:
     print("❌ Error loading movies dataset:", e)
     movies_list_df = pd.DataFrame()
 
-# Home route
 @app.route('/')
 def index():
     if not movies_list_df.empty:
         movies_list = movies_list_df.to_dict(orient='records')
+        # This requires a folder named 'templates' with 'index.html' inside
         return render_template('index.html', movies=movies_list)
     else:
-        return "Movies dataset could not be loaded.", 500
+        return f"<h1>Error</h1><p>Dataset '{CSV_FILENAME}' could not be loaded or is empty.</p>", 500
 
-# Recommendation API
 @app.route('/recommend', methods=['POST'])
 def recommend_movies():
     try:
@@ -34,26 +38,19 @@ def recommend_movies():
         if not genre:
             return jsonify({'error': 'Please provide a genre'}), 400
 
+        if movies_list_df.empty:
+            return jsonify({'error': 'Database is empty'}), 500
+
         filtered_movies = movies_list_df[
             movies_list_df['genres'].str.lower().str.contains(genre, na=False)
         ]
 
-        if filtered_movies.empty:
-            return jsonify({'movies': []})
-
         recommended_movies = filtered_movies[['title', 'genres', 'overview']].to_dict(orient='records')
-
         return jsonify({'movies': recommended_movies})
 
     except Exception as e:
-        print("❌ Error in recommendation:", e)
-        return jsonify({'error': 'Something went wrong'}), 500
+        return jsonify({'error': str(e)}), 500
 
-# Optional debug route (you can remove later)
-@app.route('/')
-def index():
-    return "HOME WORKING"
-# Run locally (Render uses Gunicorn instead)
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
