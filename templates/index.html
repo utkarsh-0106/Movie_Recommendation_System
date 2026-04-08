@@ -3,105 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Movie Recommendation</title>
+  <title>CineMatch | Movie Recommendations</title>
 
   <style>
+    :root {
+      --primary: #ff6347;
+      --overlay: rgba(0, 0, 0, 0.75);
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      min-height: 100vh;
+      /* Dynamic Background with fallback color */
+      background: linear-gradient(var(--overlay), var(--overlay)), 
+                  url("{{ url_for('static', filename='images/bg.jpg') }}");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Glassmorphism Effect for the Main Card */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 50px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
       text-align: center;
     }
 
     h1 {
-      color: #ff6347;
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
-    select, button {
-      padding: 10px;
+    .controls select, .controls button {
+      padding: 12px 20px;
       font-size: 16px;
       margin: 10px;
       border: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      outline: none;
+      transition: 0.3s;
     }
 
     select {
-      background-color: #333;
+      background-color: rgba(0,0,0,0.6);
       color: #fff;
-    }
-
-    button {
-      background-color: #ff6347;
-      color: #fff;
+      border: 1px solid var(--primary) !important;
       cursor: pointer;
     }
 
+    button {
+      background-color: var(--primary);
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 99, 71, 0.4);
+    }
+
     button:hover {
+      transform: scale(1.05);
       background-color: #e5533c;
     }
 
-    .container {
-      margin-top: 20px;
+    #timeMessage {
+      font-style: italic;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* Modern Movie List Design */
+    #movies_list {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 100%;
     }
 
     .movie-item {
-      background: #fff;
-      padding: 15px;
-      margin: 10px auto;
-      border-radius: 8px;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-left: 5px solid var(--primary);
+      border-radius: 10px;
       text-align: left;
+      transition: 0.3s;
     }
 
-    .dark-mode {
-      background-color: #2e2e2e;
-      color: #fff;
+    .movie-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-5px);
     }
 
-    .dark-mode .movie-item {
-      background: #444;
-      color: #fff;
+    .movie-item h3 {
+      margin: 0 0 10px 0;
+      color: var(--primary);
     }
 
-    .toggle-dark-mode {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #ff6347;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
+    .movie-item p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ddd;
     }
+
+    /* Custom Scrollbar for better look */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
   </style>
 </head>
 
 <body>
 
-  <h1>🎬 CineMatch</h1>
+  <div class="glass-panel">
+    <h1>🎬 CineMatch</h1>
+    <p>Find your next favorite movie based on your mood.</p>
 
-  <div class="container">
-    <label>Select time:</label>
-    <select id="time">
-      <option value="morning">Morning</option>
-      <option value="afternoon">Afternoon</option>
-      <option value="evening">Evening</option>
-      <option value="night">Night</option>
-    </select>
+    <div class="controls">
+      <label>What's the time?</label>
+      <select id="time">
+        <option value="morning">☀️ Morning</option>
+        <option value="afternoon">🌤️ Afternoon</option>
+        <option value="evening">🌆 Evening</option>
+        <option value="night">🌙 Night</option>
+      </select>
 
-    <button onclick="showGenres()">Show Genres</button>
+      <button onclick="showGenres()">Explore Moods</button>
+    </div>
 
     <p id="timeMessage"></p>
-    <div id="genresList"></div>
+    <div id="genresList" class="controls"></div>
+    
     <div id="movies_list"></div>
   </div>
 
-  <button class="toggle-dark-mode" onclick="toggleDarkMode()">
-    Dark Mode
-  </button>
-
 <script>
+// ... (Your existing JavaScript remains exactly the same) ...
 const genresByTime = {
   morning: ["motivational", "comedy"],
   afternoon: ["action", "adventure"],
@@ -131,7 +184,7 @@ function showGenres() {
   genres.forEach(g => {
     const option = document.createElement("option");
     option.value = g;
-    option.textContent = g;
+    option.textContent = g.charAt(0).toUpperCase() + g.slice(1);
     dropdown.appendChild(option);
   });
 
@@ -148,14 +201,12 @@ async function showMovies() {
   const genre = document.getElementById("genreDropdown").value;
   const container = document.getElementById("movies_list");
 
-  container.innerHTML = "Loading...";
+  container.innerHTML = "<p>Scanning the multiverse for movies...</p>";
 
   try {
     const res = await fetch("/recommend", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ genre: genre })
     });
 
@@ -163,7 +214,7 @@ async function showMovies() {
     container.innerHTML = "";
 
     if (data.movies.length === 0) {
-      container.innerHTML = "<p>No movies found.</p>";
+      container.innerHTML = "<p>No movies found for this mood.</p>";
       return;
     }
 
@@ -181,10 +232,6 @@ async function showMovies() {
   } catch (err) {
     container.innerHTML = "Error loading movies.";
   }
-}
-
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
 }
 </script>
 
