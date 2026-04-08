@@ -64,73 +64,527 @@ Dilwale Dulhania Le Jayenge,Romance/Drama,A young man and woman fall in love on 
 Gully Boy,Musical/Drama,A young man from the slums pursues his dream of becoming a rapper.
 Raazi,Spy Thriller,A young Indian woman marries a Pakistani army officer to spy during the 1971 Indo-Pak war.
 Zindagi Na Milegi Dobara,Adventure/Drama,Three friends embark on a road trip across Spain to fulfill their travel bucket list.
-Piku,Comedy/Drama,"A road trip brings a father and daughter closer, despite his constant complaints about health."
-Baahubali: The Beginning,Fantasy/Action,The journey of a young man discovering his royal legacy and avenging his father's murder.
+Piku,Comedy/Drama,A road trip brings a father and daughter closer.
+Baahubali: The Beginning,Fantasy/Action,The journey of a young man discovering his royal legacy.
 Barfi!,Romantic/Comedy,The story of a mute man who finds love in the most unexpected circumstances.
 Kahaani,Thriller,A pregnant woman’s relentless search for her missing husband in Kolkata.
-My Name is Khan,Drama/Romance,A man with Asperger's embarks on a journey across the U.S. to prove his love and innocence.
-Yeh Jawaani Hai Deewani,Romance/Drama,Four friends navigate love and life through various stages and crossroads.
-Tumbbad,Horror/Fantasy,A mythical treasure leads a man on a dark and dangerous path in ancient India.
+My Name is Khan,Drama/Romance,A man with Asperger's embarks on a journey across the U.S.
+Yeh Jawaani Hai Deewani,Romance/Drama,Four friends navigate love and life through various stages.
+Tumbbad,Horror/Fantasy,A mythical treasure leads a man on a dark and dangerous path.
 Taare Zameen Par,Family/Drama,A dyslexic child finds support and confidence through his art teacher.
-Padmaavat,Historical/Drama,"The story of Queen Padmavati, her husband Maharawal Ratan Singh, and Alauddin Khilji."
+Padmaavat,Historical/Drama,The story of Queen Padmavati and her husband Ratan Singh.
 Rockstar,Romance/Musical,A young musician finds success and heartbreak as he pursues his dreams.
-Bajrangi Bhaijaan,Adventure/Drama,An Indian man helps a mute Pakistani girl return to her homeland.
-Stree,Horror/Comedy,Villagers encounter a mysterious woman who abducts men during the night.
-Uri: The Surgical Strike,Action/Drama,Based on the true events of the Indian Army's surgical strikes in Pakistan-administered Kashmir.
-Article 15,Crime/Drama,An IPS officer investigates a caste-based crime that shakes up the community.
-Chak De! India,Sports/Drama,A disgraced hockey player coaches the Indian women's team to victory.
-Don,Action/Thriller,"A police officer goes undercover to catch a notorious criminal, Don."
-Pink,Social/Drama,Three young women fight for justice against a powerful businessman in a legal battle.
-Drishyam,Thriller,A man goes to extreme lengths to protect his family from a crime they didn’t commit.
-Badhaai Ho,Comedy/Drama,A middle-aged couple’s unexpected pregnancy shocks their family and community.
-Jab We Met,Romance/Comedy,A bubbly woman and a heartbroken man embark on a journey that changes their lives.
-Bajirao Mastani,Historical/Drama,"A love story of the Peshwa Bajirao and his second wife, Mastani, set in the Maratha Empire."
-Sui Dhaaga,Drama/Inspirational,A couple overcomes societal challenges to establish their own clothing business.
-Housefull,Comedy,A man with an unlucky love life tries to navigate through a series of humorous events.
-Munna Bhai M.B.B.S,Comedy/Drama,A thug enrolls in medical school to prove his worth to his parents.
-Haider,Political Drama,A young man returns to Kashmir and uncovers dark secrets about his family.
-Swades,Drama,An NRI returns to India and finds new purpose while trying to improve rural conditions.
-Ra.One,Sci-Fi/Action,"A video game designer must fight against his creation, which has come to life."
-Veer-Zaara,Romance/Drama,A love story between an Indian Air Force officer and a Pakistani woman unfolds across borders.
-Bhool Bhulaiyaa,Horror/Comedy,A psychologist investigates strange events at an ancestral palace.
-KGF: Chapter 1,Action/Drama,"A young man rises to power in the gold mines of Kolar, facing enemies and overcoming challenges to become a feared leader."
-Baahubali: The Conclusion,Action/Fantasy,"In the epic finale, Mahendra Baahubali, son of Amarendra Baahubali, avenges his father's death and takes his rightful place as the king of Mahishmati."
-Vikram Vedha,Action/Thriller,"A fearless cop chases down a notorious gangster, only to learn deeper lessons about morality and justice."
-Master,Action/Thriller,"An alcoholic professor is assigned to teach in a juvenile correctional facility, where he encounters a dangerous criminal with a sinister agenda."
-Pushpa: The Rise,Action/Drama,"Pushpa, a laborer in the red sandalwood smuggling trade, rises through the ranks amidst a dangerous syndicate."
-Kaithi,Action/Thriller,"A prisoner, on his way to meet his daughter for the first time, is forced to help the police when a drug raid goes wrong."
-Sarkar,Action/Drama,A businessman returns to India and takes on corrupt politicians in his quest to clean up the system.
-Aruvi,Action/Drama,"A young woman seeks vengeance against those who betrayed her, leading to a deep exploration of social issues."
-Ala Vaikunthapurramuloo,Action/Drama,A man raised by his mother in a modest family discovers the truth about his heritage and fights for his rightful place.
-Sye,Action/Sports,A unique action-sports drama where two rival college groups team up against a common enemy to save their playground.
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+Bajrangi Bhaijaan,Adventure/Drama,An Indian man helps a mute Pakistani girl return home.
+Stree,Horror/Comedy,Villagers encounter a mysterious woman who abducts men.
+Uri: The Surgical Strike,Action/Drama,Based on the true events of the Indian Army's surgical strikes.
+Article 15,Crime/Drama,An IPS officer investigates a caste-based crime.
+Chak De! India,Sports/Drama,A disgraced hockey player coaches the Indian women's team.
+Don,Action/Thriller,A police officer goes undercover to catch a criminal.
+Pink,Social/Drama,Three young women fight for justice against a powerful businessman.
+Drishyam,Thriller,A man goes to extreme lengths to protect his family.
+Badhaai Ho,Comedy/Drama,A middle-aged couple’s unexpected pregnancy shocks their family.
+Jab We Met,Romance/Comedy,A bubbly woman and a heartbroken man embark on a journey.
+Bajirao Mastani,Historical/Drama,A love story of the Peshwa Bajirao and his second wife Mastani.
+Sui Dhaaga,Drama/Inspirational,A couple overcomes societal challenges to start a business.
+Housefull,Comedy,A man with an unlucky love life tries to navigate through series of events.
+Munna Bhai M.B.B.S,Comedy/Drama,A thug enrolls in medical school to prove his worth.
+Haider,Political Drama,A young man returns to Kashmir and uncovers dark secrets.
+Swades,Drama,An NRI returns to India and finds new purpose in rural conditions.
+Ra.One,Sci-Fi/Action,A video game designer must fight against his creation.
+Veer-Zaara,Romance/Drama,A love story between an Indian officer and a Pakistani woman.
+Bhool Bhulaiyaa,Horror/Comedy,A psychologist investigates strange events at a palace.
+KGF: Chapter 1,Action/Drama,A young man rises to power in the gold mines of Kolar.
+Baahubali: The Conclusion,Action/Fantasy,The epic finale where Mahendra Baahubali avenges his father.
+Vikram Vedha,Action/Thriller,A fearless cop chases down a notorious gangster.
+Master,Action/Thriller,An alcoholic professor is assigned to teach in a juvenile facility.
+Pushpa: The Rise,Action/Drama,A laborer in the red sandalwood trade rises through the ranks.
+Kaithi,Action/Thriller,A prisoner is forced to help the police during a drug raid.
+Sarkar,Action/Drama,A businessman returns to India to take on corrupt politicians.
+Aruvi,Action/Drama,A young woman seeks vengeance against those who betrayed her.
+Ala Vaikunthapurramuloo,Action/Drama,A man discovers the truth about his heritage and fights for his place.
+Sye,Action/Sports,Two rival college groups team up against a common enemy.
+The Godfather Part II,Crime/Drama,The early life of Vito Corleone and the ascent of Michael.
+12 Angry Men,Drama,A jury must decide the fate of a man in a murder trial.
+Seven Samurai,Action/Drama,Farmers hire samurai to protect them from bandits.
+City of God,Crime/Drama,Two boys grow up in a violent neighborhood in Rio.
+Spirited Away,Animation/Fantasy,A girl enters a magical world to save her parents.
+Life Is Beautiful,Drama/Comedy,A Jewish father uses humor to protect his son in a camp.
+The Shining,Horror,A family stays at an isolated hotel where a dark presence looms.
+Alien,Sci-Fi/Horror,A spaceship crew encounters a deadly extraterrestrial.
+Blade Runner 2049,Sci-Fi/Mystery,A new blade runner uncovers a long-buried secret.
+The Usual Suspects,Mystery/Crime,Police interview a con man about a heist gone wrong.
+Psycho,Horror/Mystery,A woman checks into a motel run by a mysterious man.
+The Lion King 2,Animation/Family,Simba’s daughter seeks adventure outside the pride lands.
+The Dark Knight Rises,Action/Drama,Batman returns to save Gotham from Bane.
+Rear Window,Mystery/Thriller,A photographer believes he witnessed a murder from his window.
+Alien: Resurrection,Sci-Fi/Action,Clone of Ripley helps fight a new breed of aliens.
+Apocalypse Now,War/Drama,A captain is sent to find and kill a rogue colonel.
+Raiders of the Lost Ark,Adventure/Action,Indiana Jones searches for the Biblical Ark of the Covenant.
+Terminator 2: Judgment Day,Sci-Fi/Action,A cyborg is sent back in time to protect a young boy.
+Back to the Future,Sci-Fi/Comedy,A teen travels back to the 1950s in a time-traveling car.
+Léon: The Professional,Crime/Drama,A hitman takes in a young girl after her family is killed.
+American History X,Drama/Crime,A former neo-Nazi tries to save his brother from the same path.
+The Pianist,Biography/Drama,A Jewish musician struggles to survive in WWII Poland.
+Gladiator II,Action/History,A new hero rises in the Colosseum.
+The Intouchables,Biography/Comedy,A wealthy man becomes friends with his caretaker from the projects.
+Wall-E,Animation/Sci-Fi,A robot on a deserted Earth finds a new purpose.
+The Lives of Others,Drama/Thriller,A secret police officer monitors a playwright in East Germany.
+Amadeus,Biography/Musical,The life and rivalry of Mozart and Salieri.
+The Bridge on the River Kwai,War/Drama,British POWs build a bridge for their captors in WWII.
+Cinema Paradiso,Drama,A filmmaker recalls his childhood friendship with a projectionist.
+Memento,Mystery/Thriller,A man with short-term memory loss seeks his wife's killer.
+Sunset Boulevard,Noir/Drama,A screenwriter becomes involved with a faded silent film star.
+Dr. Strangelove,Comedy/War,A general triggers a nuclear crisis.
+Witness for the Prosecution,Mystery/Drama,A veteran lawyer takes on a murder case.
+Paths of Glory,War/Drama,A French officer defends soldiers against cowardice charges.
+The Great Dictator,Comedy/War,Charlie Chaplin satirizes Adolf Hitler.
+Double Indemnity,Noir/Crime,An insurance salesman is talked into a murder scheme.
+Citizen Kane,Mystery/Drama,The investigation into a tycoon's final words.
+Scarface,Crime/Drama,A Cuban immigrant rises to the top of a drug cartel.
+Heat,Crime/Action,A detective and a master thief play a high-stakes game.
+Gran Torino,Drama,A veteran develops a bond with his Hmong neighbors.
+The Deer Hunter,War/Drama,The lives of friends are changed by the Vietnam War.
+The Thing,Horror/Sci-Fi,Researchers in Antarctica face a shape-shifting alien.
+Rocky,Sports/Drama,An underdog boxer gets a shot at the world title.
+Platoon,War/Drama,A young soldier faces the horrors of the Vietnam War.
+No Country for Old Men,Crime/Thriller,A hunter finds a drug deal gone wrong and a bag of cash.
+Once Upon a Time in the West,Western,A mysterious stranger protects a widow from a gunman.
+Unforgiven,Western/Drama,A retired gunslinger takes on one last job.
+Casino,Crime/Drama,The rise and fall of a gambling empire in Las Vegas.
+Requiem for a Dream,Drama,The lives of four drug addicts spiral out of control.
+Trainspotting,Drama/Comedy,The lives of heroin addicts in Edinburgh.
+A Clockwork Orange,Sci-Fi/Crime,A delinquent undergoes an experimental rehabilitation.
+L.A. Confidential,Crime/Mystery,Police investigate a series of murders in 1950s LA.
+The Big Short,Biography/Comedy,Investors bet against the US housing market.
+Room,Drama,A mother and son escape from years of captivity.
+Spotlight,Biography/Drama,Journalists uncover a massive scandal in the Catholic Church.
+Oldboy,Mystery/Thriller,A man is kidnapped and imprisoned for 15 years.
+Snatch,Crime/Comedy,A variety of characters get involved in a diamond heist.
+Toy Story 3,Animation/Comedy,The toys face a new challenge at a daycare center.
+Up,Animation/Adventure,An old man flies his house to South America.
+Finding Dory,Animation/Adventure,Dory searches for her long-lost parents.
+Monsters Inc.,Animation/Comedy,Monsters must scare children to power their city.
+Ratatouille,Animation/Comedy,A rat who can cook teams up with a kitchen worker.
+The Incredibles,Animation/Action,A family of superheroes must hide their powers.
+The Sixth Sense,Mystery/Thriller,A boy sees dead people and seeks help.
+Grave of the Fireflies,Animation/War,Two siblings struggle to survive in WWII Japan.
+Howl's Moving Castle,Animation/Fantasy,A girl is cursed and finds refuge in a walking castle.
+Princess Mononoke,Animation/Fantasy,A young warrior gets involved in a war between gods and humans.
+My Neighbor Totoro,Animation/Fantasy,Two sisters encounter spirits in the forest.
+Your Name,Animation/Romance,Two teens swap bodies and search for each other.
+Weathering with You,Animation/Fantasy,A boy meets a girl who can control the weather.
+Akira,Animation/Sci-Fi,A biker gang member gains telekinetic powers.
+Perfect Blue,Animation/Thriller,A pop singer is stalked by an obsessed fan.
+The Truman Show,Drama/Sci-Fi,A man discovers his entire life is a TV show.
+The Terminator,Sci-Fi/Action,A cyborg is sent to kill the mother of a future leader.
+Aliens,Sci-Fi/Action,Ripley returns to the planet of the aliens with marines.
+The Exorcist,Horror,A girl is possessed by a demon.
+Hereditary,Horror/Drama,A family uncovers dark secrets after their grandmother dies.
+The Witch,Horror/Mystery,A family in 1630s New England faces a supernatural presence.
+Midsommar,Horror/Drama,A couple visits a Swedish midsummer festival that turns cultish.
+Us,Horror/Thriller,A family is haunted by their doppelgängers.
+A Quiet Place,Horror/Sci-Fi,A family must live in silence to avoid monsters.
+It,Horror/Thriller,Seven children are hunted by a shape-shifting clown.
+Halloween,Horror/Thriller,A killer escapes a mental hospital and returns home.
+Scream,Horror/Mystery,A killer targets a group of teenagers using horror tropes.
+The Texas Chain Saw Massacre,Horror,A group of friends encounters a family of cannibals.
+Night of the Living Dead,Horror,The dead come back to life and hunt the living.
+Dawn of the Dead,Horror,Survivors take refuge in a shopping mall during a zombie plague.
+28 Days Later,Horror/Sci-Fi,A man wakes up to a world ravaged by a rage virus.
+Shaun of the Dead,Comedy/Horror,A man tries to save his friends during a zombie apocalypse.
+Hot Fuzz,Comedy/Action,A top London cop is reassigned to a sleepy village.
+The World's End,Comedy/Sci-Fi,Friends on a pub crawl encounter an alien invasion.
+Scott Pilgrim vs. the World,Comedy/Action,A man must defeat his girlfriend's seven evil exes.
+Superbad,Comedy,Two high school seniors try to buy alcohol for a party.
+The Hangover,Comedy,Friends wake up from a bachelor party with no memory.
+Anchorman,Comedy,A 1970s news anchor deals with a new female colleague.
+Step Brothers,Comedy,Two middle-aged men become step-brothers.
+Dumb and Dumber,Comedy,Two dim-witted friends travel across the country.
+Groundhog Day,Comedy/Fantasy,A man relives the same day over and over.
+Ghostbusters,Comedy/Sci-Fi,Paranormal investigators start a business in NYC.
+The Princess Bride,Adventure/Romance,A young man must rescue his true love.
+Back to the Future Part II,Sci-Fi/Comedy,Marty travels to the future to save his kids.
+Back to the Future Part III,Sci-Fi/Western,Marty travels to the Old West to save Doc.
+Indiana Jones and the Last Crusade,Adventure/Action,Indy searches for his father and the Holy Grail.
+Jurassic Park: The Lost World,Adventure/Sci-Fi,A team returns to the island of dinosaurs.
+Star Wars: A New Hope,Sci-Fi/Adventure,Luke Skywalker joins the rebellion against the Empire.
+Star Wars: The Empire Strikes Back,Sci-Fi/Adventure,The Empire hunts down the rebels.
+Star Wars: Return of the Jedi,Sci-Fi/Adventure,The rebels make their final stand against the Empire.
+The Lord of the Rings: The Fellowship of the Ring,Fantasy/Adventure,A hobbit begins a journey to destroy a powerful ring.
+The Lord of the Rings: The Two Towers,Fantasy/Adventure,The fellowship is broken as they head to Mordor.
+The Lord of the Rings: The Return of the King,Fantasy/Adventure,The final battle for Middle-earth begins.
+The Hobbit: An Unexpected Journey,Fantasy/Adventure,Bilbo Baggins joins a quest to reclaim a kingdom.
+Harry Potter and the Chamber of Secrets,Fantasy/Adventure,Harry returns to Hogwarts and finds a hidden chamber.
+Harry Potter and the Prisoner of Azkaban,Fantasy/Adventure,Harry learns the truth about his past.
+Harry Potter and the Goblet of Fire,Fantasy/Adventure,Harry competes in a dangerous wizarding tournament.
+Harry Potter and the Order of the Phoenix,Fantasy/Adventure,Harry prepares for the return of Voldemort.
+Harry Potter and the Half-Blood Prince,Fantasy/Adventure,Harry discovers an old textbook with secrets.
+Harry Potter and the Deathly Hallows: Part 1,Fantasy/Adventure,Harry and friends search for horcruxes.
+Harry Potter and the Deathly Hallows: Part 2,Fantasy/Adventure,The final battle between Harry and Voldemort.
+The Chronicles of Narnia,Fantasy/Adventure,Children enter a magical world through a wardrobe.
+The Golden Compass,Fantasy/Adventure,A girl travels to the north to save her friend.
+Stardust,Fantasy/Romance,A man enters a magical realm to find a fallen star.
+The NeverEnding Story,Fantasy/Adventure,A boy enters a book and helps save a world.
+Labyrinth,Fantasy/Adventure,A girl must navigate a maze to save her brother.
+The Dark Crystal,Fantasy/Adventure,A Gelfling seeks to restore a magical crystal.
+Willow,Fantasy/Adventure,A farmer protects a special baby from an evil queen.
+Ex Machina,Sci-Fi/Thriller,A programmer tests a highly advanced AI.
+Arrival,Sci-Fi/Drama,A linguist communicates with alien visitors.
+Contact,Sci-Fi/Drama,A scientist finds evidence of extraterrestrial life.
+Close Encounters of the Third Kind,Sci-Fi/Adventure,A man has an encounter with a UFO.
+E.T. the Extra-Terrestrial,Sci-Fi/Adventure,A boy befriends a stranded alien.
+District 9,Sci-Fi/Action,Aliens are forced to live in a slum in South Africa.
+Gravity,Sci-Fi/Thriller,Two astronauts struggle to survive in space.
+The Martian,Sci-Fi/Adventure,An astronaut is stranded on Mars.
+Moon,Sci-Fi/Drama,A man on a lunar base nears the end of his shift.
+Source Code,Sci-Fi/Thriller,A soldier relives a train explosion to find the bomber.
+Looper,Sci-Fi/Action,A hitman kills targets sent from the future.
+Edge of Tomorrow,Sci-Fi/Action,A soldier relives the same battle over and over.
+Tenet,Sci-Fi/Action,A man tries to prevent World War III using time inversion.
+Dune,Sci-Fi/Adventure,A young man travels to a dangerous desert planet.
+Dune: Part Two,Sci-Fi/Adventure,Paul Atreides seeks revenge against those who destroyed his family.
+Prometheus,Sci-Fi/Horror,A team searches for the origins of humanity.
+The Fifth Element,Sci-Fi/Action,A cab driver must find a powerful weapon to save Earth.
+Minority Report,Sci-Fi/Action,A cop is accused of a future murder.
+Total Recall,Sci-Fi/Action,A man discovers his memories are fake.
+RoboCop,Sci-Fi/Action,A dead cop is resurrected as a cyborg.
+Predator,Sci-Fi/Action,Marines are hunted by an alien warrior.
+Die Hard,Action/Thriller,A cop fights terrorists in a skyscraper.
+Speed,Action/Thriller,A cop must keep a bus from exploding.
+The Fugitive,Action/Thriller,A doctor is wrongly accused of his wife's murder.
+Taken,Action/Thriller,A former agent searches for his kidnapped daughter.
+John Wick,Action/Thriller,A retired hitman seeks revenge for his dog.
+John Wick: Chapter 2,Action/Thriller,John Wick is forced out of retirement again.
+John Wick: Chapter 3,Action/Thriller,John Wick is on the run from assassins.
+John Wick: Chapter 4,Action/Thriller,John Wick takes on the High Table.
+Mission: Impossible,Action/Thriller,An agent is framed for the death of his team.
+Mission: Impossible - Fallout,Action/Thriller,Ethan Hunt must stop a nuclear threat.
+Skyfall,Action/Thriller,James Bond faces a threat from his past.
+Casino Royale,Action/Thriller,Bond must win a high-stakes poker game.
+Mad Max 2: The Road Warrior,Action/Sci-Fi,Max helps a community defend their fuel.
+Lethal Weapon,Action/Crime,Two mismatched cops team up.
+Beverly Hills Cop,Action/Comedy,A Detroit cop investigates a murder in LA.
+Rush Hour,Action/Comedy,Two detectives team up to save a girl.
+Bad Boys,Action/Comedy,Two detectives protect a witness.
+Top Gun,Action/Drama,A pilot trains at an elite flight school.
+Top Gun: Maverick,Action/Drama,Maverick returns to train a new generation.
+Independence Day,Sci-Fi/Action,Earth fights back against an alien invasion.
+Men in Black,Sci-Fi/Comedy,Agents monitor alien activity on Earth.
+The Bourne Identity,Action/Thriller,An amnesiac man discovers he's an assassin.
+The Bourne Supremacy,Action/Thriller,Bourne is framed and goes on the run.
+The Bourne Ultimatum,Action/Thriller,Bourne searches for his true identity.
+The Hunger Games,Sci-Fi/Adventure,Teens are forced to fight to the death.
+The Maze Runner,Sci-Fi/Action,Teens are trapped in a giant maze.
+Divergent,Sci-Fi/Adventure,A girl discovers she doesn't fit into society.
+Twilight,Romance/Fantasy,A girl falls in love with a vampire.
+The Fault in Our Stars,Romance/Drama,Two teens with cancer fall in love.
+Me Before You,Romance/Drama,A girl becomes a caretaker for a paralyzed man.
+A Walk to Remember,Romance/Drama,A popular boy falls for a quiet girl.
+The Vow,Romance/Drama,A man tries to win back his wife after she loses her memory.
+Dear John,Romance/Drama,A soldier falls in love while on leave.
+The Holiday,Romance/Comedy,Two women swap houses for the holidays.
+Notting Hill,Romance/Comedy,A famous actress falls for a bookstore owner.
+Pretty Woman,Romance/Comedy,A businessman falls for an escort.
+10 Things I Hate About You,Romance/Comedy,A teen tries to date a girl with a tough exterior.
+Mean Girls,Comedy,A girl navigates the social hierarchy of high school.
+Clueless,Comedy/Romance,A wealthy teen plays matchmaker.
+Legally Blonde,Comedy,A sorority girl goes to Harvard Law School.
+The Devil Wears Prada,Comedy/Drama,A girl becomes an assistant to a tough fashion editor.
+Little Miss Sunshine,Comedy/Drama,A family travels to a beauty pageant.
+Juno,Comedy/Drama,A teen deals with an unplanned pregnancy.
+Lady Bird,Comedy/Drama,A teen girl navigates her relationship with her mother.
+Booksmart,Comedy,Two academic superstars try to party before graduation.
+Easy A,Comedy,A high school girl uses a rumor to her advantage.
+The Edge of Seventeen,Comedy/Drama,A teen girl deals with high school drama.
+Eighth Grade,Comedy/Drama,A girl navigates her final week of middle school.
+Sing Street,Musical/Drama,A boy starts a band to impress a girl.
+Once,Musical/Romance,Two musicians bond over their music.
+Whiplash,Drama/Music,A drummer is pushed to his limits.
+Sound of Metal,Drama/Music,A drummer loses his hearing.
+Bohemian Rhapsody,Biography/Music,The story of Freddie Mercury and Queen.
+Rocketman,Biography/Music,The life of Elton John.
+Elvis,Biography/Music,The life and career of Elvis Presley.
+Walk the Line,Biography/Music,The life of Johnny Cash.
+Ray,Biography/Music,The life of Ray Charles.
+Straight Outta Compton,Biography/Music,The rise of N.W.A.
+8 Mile,Drama/Music,A young rapper struggles in Detroit.
+The Blues Brothers,Comedy/Musical,Two brothers try to save their old orphanage.
+Grease,Musical/Romance,Two teens fall in love over the summer.
+Mamma Mia!,Musical/Comedy,A girl tries to find her father before her wedding.
+Chicago,Musical/Crime,Two murderesses find fame in the 1920s.
+West Side Story,Musical/Romance,Two rival gangs fight for control in NYC.
+The Sound of Music,Musical/Drama,A governess brings music to a family.
+Mary Poppins,Musical/Fantasy,A magical nanny helps a family.
+The Wizard of Oz,Fantasy/Musical,A girl is swept away to a magical land.
+Willy Wonka & the Chocolate Factory,Fantasy/Musical,A boy wins a tour of a chocolate factory.
+Matilda,Fantasy/Family,A girl with powers deals with her cruel parents.
+The BFG,Fantasy/Family,A girl befriends a giant.
+The Witches,Fantasy/Horror,A boy discovers a coven of witches.
+Hook,Fantasy/Adventure,Peter Pan returns to Neverland as an adult.
+Jumanji,Adventure/Fantasy,A board game brings jungle dangers to life.
+Zathura,Sci-Fi/Adventure,A board game sends two brothers into space.
+The Goonies,Adventure/Comedy,Kids search for a hidden treasure.
+Stand by Me,Drama/Adventure,Friends go on a journey to find a body.
+The Breakfast Club,Drama/Comedy,Five students bond during detention.
+Ferris Bueller's Day Off,Comedy,A teen skips school for a day in Chicago.
+Back to the Future,Sci-Fi/Comedy,Marty travels back to 1955.
+Ghostbusters,Comedy/Sci-Fi,Scientists hunt ghosts in NYC.
+Gremlins,Horror/Comedy,A boy gets a creature that spawns monsters.
+The Karate Kid,Sports/Drama,A teen learns karate to defend himself.
+The Outsiders,Drama,Two rival gangs clash in the 1960s.
+Dead Poets Society,Drama,A teacher inspires his students through poetry.
+Good Will Hunting,Drama,A janitor is a secret math genius.
+The Shawshank Redemption,Drama,A man is wrongly imprisoned for murder.
+The Green Mile,Drama/Fantasy,A guard meets a man with special powers.
+The Help,Drama,A girl writes about the lives of black maids.
+Hidden Figures,Biography/Drama,Black women help NASA during the space race.
+The King's Speech,Biography/Drama,King George VI tries to overcome his stammer.
+The Imitation Game,Biography/Drama,Alan Turing breaks the Nazi Enigma code.
+Theory of Everything,Biography/Drama,The life of Stephen Hawking.
+The Social Network,Biography/Drama,The creation of Facebook.
+Moneyball,Biography/Sports,A man uses statistics to build a baseball team.
+Coach Carter,Biography/Sports,A coach pushes his team to succeed in school.
+Remember the Titans,Biography/Sports,A football team integrates in the 1970s.
+The Blind Side,Biography/Sports,A family takes in a homeless teen.
+The Fighter,Biography/Sports,The life of boxer Micky Ward.
+Raging Bull,Biography/Sports,The life of boxer Jake LaMotta.
+Ford v Ferrari,Biography/Sports,Ford tries to beat Ferrari at Le Mans.
+Rush,Biography/Sports,The rivalry between James Hunt and Niki Lauda.
+I, Tonya,Biography/Sports,The life of skater Tonya Harding.
+The Iron Claw,Biography/Sports,The story of the Von Erich wrestlers.
+Air,Biography/Sports,The story of Nike and Michael Jordan.
+Tetris,Biography/Drama,The story of how Tetris became a hit.
+Oppenheimer,Biography/History,The story of the atomic bomb.
+The Zone of Interest,War/Drama,A Nazi family lives next to Auschwitz.
+All Quiet on the Western Front,War/Drama,A young soldier faces the horrors of WWI.
+1917,War/Drama,Two soldiers must deliver a message during WWI.
+Dunkirk,War/Action,Soldiers are evacuated from the beaches of France.
+Hacksaw Ridge,War/Biography,A soldier refuses to carry a weapon in WWII.
+American Sniper,War/Biography,The life of sniper Chris Kyle.
+Lone Survivor,War/Action,Navy SEALs are ambushed in Afghanistan.
+Black Hawk Down,War/Action,A rescue mission goes wrong in Somalia.
+Zero Dark Thirty,Thriller/History,The hunt for Osama bin Laden.
+Argo,Thriller/History,The CIA rescues Americans from Iran.
+The Big Short,Comedy/Drama,The 2008 financial crisis.
+The Wolf of Wall Street,Biography/Crime,The life of Jordan Belfort.
+Goodfellas,Crime/Drama,The life of a mobster.
+The Departed,Crime/Thriller,An undercover cop in the mob.
+American Gangster,Crime/Biography,A drug lord in the 1970s.
+The Irishman,Crime/Biography,A hitman recalls his life.
+Heat,Crime/Action,A cop and a thief face off.
+Collateral,Crime/Thriller,A hitman takes a cab driver hostage.
+The Town,Crime/Thriller,A group of bank robbers in Boston.
+Baby Driver,Crime/Action,A getaway driver uses music to drive.
+Drive,Crime/Drama,A stuntman works as a getaway driver.
+Nightcrawler,Crime/Thriller,A man films crimes for news.
+Sicario,Crime/Thriller,An agent is sent to fight drug cartels.
+Wind River,Mystery/Thriller,An agent investigates a murder on a reservation.
+Prisoners,Mystery/Thriller,A father searches for his kidnapped daughter.
+Gone Girl,Mystery/Thriller,A man’s wife goes missing.
+The Girl with the Dragon Tattoo,Mystery/Thriller,A journalist and a hacker investigate a murder.
+Knives Out,Mystery/Comedy,A detective investigates a wealthy man's death.
+Glass Onion,Mystery/Comedy,Benoit Blanc returns for a new case.
+Murder on the Orient Express,Mystery/Crime,Hercule Poirot investigates a murder on a train.
+Death on the Nile,Mystery/Crime,Poirot investigates a murder on a boat.
+The Menu,Horror/Comedy,A group eats at an exclusive restaurant.
+Barbarian,Horror/Thriller,A girl finds a secret in her rental house.
+Pearl,Horror/Drama,A girl wants to be a star in 1918.
+X,Horror/Thriller,A group makes a film in a farmhouse.
+Talk to Me,Horror/Thriller,Teens use a hand to talk to spirits.
+Smile,Horror/Thriller,A doctor sees people smiling before they die.
+Terrifier,Horror,Art the Clown hunts victims.
+The Conjuring 2,Horror,Investigators help a family in London.
+Annabelle,Horror,A haunted doll causes terror.
+The Nun,Horror,A priest and a nun investigate a suicide.
+Insidious,Horror,A boy is in a coma and haunted by spirits.
+Sinister,Horror,A writer finds disturbing home movies.
+It Follows,Horror/Thriller,A girl is haunted by a shapeshifting entity.
+The Babadook,Horror/Drama,A mother and son are haunted by a book.
+The Lighthouse,Horror/Drama,Two lighthouse keepers go insane.
+The Northman,Action/Adventure,A Viking prince seeks revenge.
+Everything Everywhere All at Once,Sci-Fi/Action,A woman travels through the multiverse.
+Beau Is Afraid,Comedy/Drama,A man travels to see his mother.
+Poor Things,Comedy/Fantasy,A woman is brought back to life.
+The Whale,Drama,A man tries to reconnect with his daughter.
+Anatomy of a Fall,Mystery/Drama,A woman is accused of her husband's murder.
+Past Lives,Romance/Drama,Two childhood friends reunite.
+The Holdovers,Comedy/Drama,A teacher stays at school during Christmas.
+Maestro,Biography/Musical,The life of Leonard Bernstein.
+May December,Drama,A couple deals with their past.
+Saltburn,Thriller/Drama,A student is invited to a wealthy estate.
+The Killer,Action/Thriller,An assassin goes on a mission.
+Napoleon,Biography/History,The life of Napoleon Bonaparte.
+Ferrari,Biography/Drama,The life of Enzo Ferrari.
+The Creator,Sci-Fi/Action,A man fights against AI.
+Godzilla Minus One,Action/Sci-Fi,Godzilla attacks Japan after WWII.
+Spider-Man: Across the Spider-Verse,Animation/Action,Miles travels through the multiverse.
+The Super Mario Bros. Movie,Animation/Adventure,Mario and Luigi save the Mushroom Kingdom.
+Elemental,Animation/Comedy,Fire and water fall in love.
+Puss in Boots: The Last Wish,Animation/Adventure,Puss searches for the wishing star.
+The Bad Guys,Animation/Comedy,Villains try to become heroes.
+Encanto,Animation/Fantasy,A girl has no powers in a magical family.
+Luca,Animation/Adventure,A sea monster becomes human.
+Turning Red,Animation/Comedy,A girl turns into a red panda.
+The Sea Beast,Animation/Adventure,A girl hitches a ride on a monster hunter's ship.
+Nimona,Animation/Adventure,A knight is framed for a crime.
+Teenage Mutant Ninja Turtles: Mutant Mayhem,Animation/Action,The turtles fight a mutant army.
+Klaus,Animation/Adventure,A postman befriends a toymaker.
+Wolfwalkers,Animation/Adventure,A girl meets a wolf spirit.
+The Mitchells vs. the Machines,Animation/Sci-Fi,A family fights a robot apocalypse.
+Soul,Animation/Fantasy,A musician finds his soul in the afterlife.
+Onward,Animation/Fantasy,Two brothers go on a quest to see their dad.
+Frozen,Animation/Fantasy,A girl searches for her sister.
+Frozen II,Animation/Fantasy,Elsa searches for the source of her powers.
+Moana,Animation/Adventure,A girl sails to save her island.
+Tangled,Animation/Adventure,Rapunzel leaves her tower.
+Brave,Animation/Adventure,A princess must fix a curse.
+Wreck-It Ralph,Animation/Comedy,A video game villain wants to be a hero.
+Big Hero 6,Animation/Action,A boy and his robot save the city.
+Zootopia,Animation/Comedy,A rabbit cop solves a crime.
+Kung Fu Panda,Animation/Action,A panda becomes a kung fu master.
+How to Train Your Dragon,Animation/Adventure,A boy befriends a dragon.
+Shrek,Animation/Comedy,An ogre rescues a princess.
+Despicable Me,Animation/Comedy,A villain tries to steal the moon.
+Minions,Animation/Comedy,Minions search for a new master.
+Ice Age,Animation/Adventure,Animals return a human baby.
+Madagascar,Animation/Comedy,Zoo animals get stranded on an island.
+The Lego Movie,Animation/Comedy,An ordinary Lego guy saves the world.
+Spider-Man: No Way Home,Action/Sci-Fi,Spider-Man deals with the multiverse.
+Doctor Strange,Sci-Fi/Fantasy,A surgeon learns magic.
+Guardians of the Galaxy,Sci-Fi/Action,Misfits team up to save the galaxy.
+Thor: Ragnarok,Action/Sci-Fi,Thor must escape a gladiator world.
+Captain America: The Winter Soldier,Action/Thriller,Cap fights a secret enemy.
+Wonder Woman,Action/Adventure,A princess helps fight in WWI.
+The Batman,Action/Crime,Batman hunts a serial killer.
+Aquaman,Action/Adventure,A man must claim his throne underwater.
+Shazam!,Action/Comedy,A boy gains magical powers.
+Deadpool & Wolverine,Action/Comedy,The two heroes team up in the MCU.
+Inside Out 2,Animation/Family,Riley faces new emotions as a teen.
+Kingdom of the Planet of the Apes,Sci-Fi/Action,Apes and humans fight for the future.
+A Quiet Place: Day One,Horror/Sci-Fi,The day the monsters arrived in NYC.
+Furiosa: A Mad Max Saga,Action/Adventure,The origin story of Furiosa.
+The Fall Guy,Action/Comedy,A stuntman finds a missing star.
+Twisters,Action/Adventure,Storm chasers face massive tornadoes.
+Borderlands,Sci-Fi/Action,A team searches for treasure on Pandora.
+Alien: Romulus,Sci-Fi/Horror,Young people face the Xenomorph.
+Beetlejuice Beetlejuice,Comedy/Fantasy,The ghost with the most returns.
+Gladiator II,Action/Drama,Lucius returns to the arena.
+Moana 2,Animation/Adventure,Moana goes on a new voyage.
+Sonic the Hedgehog 3,Animation/Action,Sonic faces Shadow the Hedgehog.
+Mufasa: The Lion King,Animation/Adventure,The origin story of Mufasa.
+Despicable Me 4,Animation/Comedy,Gru faces a new villain.
+Kung Fu Panda 4,Animation/Action,Po becomes a spiritual leader.
+Garfield,Animation/Comedy,The cat goes on an outdoor adventure.
+Lilo & Stitch,Animation/Family,A girl adopts a blue alien.
+The Iron Giant,Animation/Sci-Fi,A boy befriends a giant robot.
+Batman: Mask of the Phantasm,Animation/Action,Batman is framed for murder.
+Anastasia,Animation/Adventure,A girl searches for her family.
+The Prince of Egypt,Animation/Drama,The story of Moses.
+Road to El Dorado,Animation/Adventure,Two con men find a city of gold.
+Titan A.E.,Animation/Sci-Fi,Humans search for a new home in space.
+The Last Unicorn,Animation/Fantasy,A unicorn searches for others of her kind.
+Watership Down,Animation/Adventure,Rabbits search for a new home.
+Secret of NIMH,Animation/Adventure,A mouse asks for help from rats.
+Charlotte's Web,Animation/Family,A spider saves a pig.
+The Land Before Time,Animation/Adventure,Dinosaurs search for the Great Valley.
+An American Tail,Animation/Adventure,A mouse searches for his family in NY.
+All Dogs Go to Heaven,Animation/Adventure,A dog returns from heaven for revenge.
+FernGully,Animation/Adventure,Fairies save their forest.
+Quest for Camelot,Animation/Adventure,A girl searches for Excalibur.
+The Swan Princess,Animation/Fantasy,A girl is turned into a swan.
+Thumbelina,Animation/Fantasy,A tiny girl searches for a home.
+Balto,Animation/Adventure,A dog saves a town from disease.
+Spirit: Stallion of the Cimarron,Animation/Adventure,A wild horse travels the frontier.
+Brother Bear,Animation/Adventure,A man is turned into a bear.
+Treasure Planet,Animation/Sci-Fi,A boy searches for treasure in space.
+Atlantis: The Lost Empire,Animation/Adventure,A team searches for Atlantis.
+The Emperor's New Groove,Animation/Comedy,An emperor is turned into a llama.
+Hercules,Animation/Fantasy,A man proves he is a hero.
+Mulan,Animation/Adventure,A girl joins the army in disguise.
+Pocahontas,Animation/Romance,A girl meets an English settler.
+The Hunchback of Notre Dame,Animation/Drama,A man protects a girl in Paris.
+Tarzan,Animation/Adventure,A man raised by apes meets humans.
+Peter Pan,Animation/Adventure,A boy who won't grow up.
+Alice in Wonderland,Animation/Fantasy,A girl enters a world of nonsense.
+Cinderella,Animation/Fantasy,A girl goes to a royal ball.
+Sleeping Beauty,Animation/Fantasy,A princess is put into a deep sleep.
+Snow White,Animation/Fantasy,A princess lives with seven dwarfs.
+Pinocchio,Animation/Fantasy,A wooden boy wants to be real.
+Bambi,Animation/Drama,A deer grows up in the forest.
+Dumbo,Animation/Family,An elephant learns to fly.
+The Jungle Book,Animation/Adventure,A boy raised by wolves.
+Robin Hood,Animation/Adventure,A fox steals from the rich.
+The Aristocats,Animation/Comedy,Cats try to return home.
+One Hundred and One Dalmatians,Animation/Adventure,Dogs save their puppies.
+Lady and the Tramp,Animation/Romance,Two dogs fall in love.
+The Fox and the Hound,Animation/Drama,Two friends become enemies.
+The Rescuers,Animation/Adventure,Mice save a kidnapped girl.
+The Great Mouse Detective,Animation/Mystery,A mouse solves a crime.
+Oliver & Company,Animation/Comedy,A kitten joins a gang of dogs.
+The Little Mermaid,Animation/Fantasy,A mermaid wants to be human.
+Beauty and the Beast,Animation/Fantasy,A girl falls for a beast.
+Aladdin,Animation/Fantasy,A boy finds a magical lamp.
+Kantara,Action/Fantasy,A conflict between humans and nature.
+777 Charlie,Adventure/Drama,A man travels with a dog.
+Sita Ramam,Romance/Drama,A soldier finds love through letters.
+RRR,Action/Drama,Two revolutionaries fight the British.
+Pushpa 2,Action/Drama,The continuation of Pushpa's rise.
+Kalki 2898 AD,Sci-Fi/Action,A modern avatar of Vishnu arrives.
+Devara,Action/Drama,A story set in the forgotten lands.
+Game Changer,Action/Drama,An officer fights for political change.
+Indian 2,Action/Thriller,Senapathy returns to fight corruption.
+Vettaiyan,Action/Drama,A cop chases justice in a complex case.
+Coolie,Action/Thriller,A laborer gets involved in a dark plot.
+Toxic,Action/Thriller,A fairy tale for grown-ups in the underworld.
+Thug Life,Action/Drama,A story of survival and power.
+Dragon,Action/Fantasy,A man discovers he has fiery powers.
+Spirit,Action/Drama,A cop deals with his inner demons.
+War 2,Action/Thriller,Two spies face off in a global mission.
+Pathaan,Action/Thriller,A spy returns to save India.
+Tiger 3,Action/Thriller,Tiger and Zoya go on a final mission.
+Jawan,Action/Thriller,A man seeks justice for his past.
+Dunki,Comedy/Drama,Friends try to reach London illegally.
+Animal,Action/Crime,A son's violent obsession for his father.
+Salaar,Action/Drama,Two friends become enemies in a city.
+Léo,Action/Thriller,A man tries to escape his past.
+Captain Miller,Action/Drama,A rebel fights during the British Raj.
+Kanguva,Action/Fantasy,A story across two different eras.
+Amar Singh Chamkila,Biography/Musical,The life of the Punjabi singer.
+Merry Christmas,Thriller/Mystery,Two strangers meet on Christmas Eve.
+Maidaan,Sports/Biography,The golden era of Indian football.
+Chandu Champion,Sports/Biography,The life of Murlikant Petkar.
+Stree 2,Horror/Comedy,The return of the mysterious woman.
+Bhool Bhulaiyaa 3,Horror/Comedy,Rooh Baba faces a new ghost.
+Baby John,Action/Thriller,A man protects his family from a gang.
+Singham Again,Action/Drama,The police force fights a massive threat.
+Sky Force,War/Action,The story of India's first air strike.
+Raid 2,Crime/Drama,Amay Patnaik returns for a new raid.
+The Sabarmati Report,Thriller/Drama,Based on true events in Gujarat.
+Love Sex Aur Dhokha 2,Drama/Anthology,Stories of love in the digital age.
+Crew,Comedy/Drama,Flight attendants get into a mess.
+Bade Miyan Chote Miyan,Action/Comedy,Two soldiers save the world.
+Srikanth,Biography/Drama,The life of Srikanth Bolla.
+Munjya,Horror/Comedy,A ghost haunts a young man.
+Kill,Action/Thriller,A soldier fights off bandits on a train.
+Ulajh,Spy/Thriller,A diplomat gets caught in a conspiracy.
+Vedaa,Action/Drama,A girl fights against injustice.
+Khel Khel Mein,Comedy/Drama,Friends play a dangerous game with phones.
+Emergency,Historical/Drama,The life of Indira Gandhi during 1975.
+Metro In Dino,Drama/Romance,Stories of people living in the city.
+Chaava,Historical/Drama,The story of Chhatrapati Sambhaji Maharaj.
+Alpha,Action/Thriller,A spy from the YRF universe.
+Jigra,Action/Drama,A sister goes to save her brother.
+The Greatest of All Time,Action/Thriller,An agent faces his past self.
+Vishwambhara,Fantasy/Action,A man travels to a mystical world.
+Saripodhaa Sanivaaram,Action/Thriller,A man who only gets angry on Saturdays.
+Devara: Part 1,Action/Drama,A legend from the coastal lands.
+Thandel,Action/Drama,A fisherman gets caught in a conflict.
+OG,Action/Thriller,A gangster returns to reclaim power.
+The Legend of Maula Jatt,Action/Drama,The rivalry between Maula and Noori.
+Laapataa Ladies,Comedy/Drama,Two brides get lost on a train.
+Shaitaan,Horror/Thriller,A man tries to save his family from a sorcerer.
+Madgaon Express,Comedy/Adventure,Friends go on a trip to Goa.
+Do Patti,Mystery/Thriller,A story of twins and a secret.
+Sector 36,Crime/Thriller,A cop hunts a serial killer in Delhi.
+The Buckingham Murders,Mystery/Crime,A detective investigates a murder in London.
+CTRL,Sci-Fi/Thriller,A girl uses AI to take revenge on her ex.
