@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load movie dataset safely
 # Ensure the name below matches your actual file name in GitHub!
-CSV_FILENAME = 'movies.csv' 
+CSV_FILENAME = 'movies_list.csv'
 
 try:
     file_path = os.path.join(os.path.dirname(__file__), CSV_FILENAME)
