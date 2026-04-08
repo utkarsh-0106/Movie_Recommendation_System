@@ -5,19 +5,24 @@ import os
 app = Flask(__name__)
 
 # Load movie dataset safely
-# Ensure the name below matches your actual file name in GitHub!
 CSV_FILENAME = 'movies_list.csv'
 
 try:
     file_path = os.path.join(os.path.dirname(__file__), CSV_FILENAME)
     if os.path.exists(file_path):
-        movies_list_df = pd.read_csv(file_path)
-        print(f"✅ {CSV_FILENAME} loaded successfully.")
+        # 🔥 on_bad_lines='skip' handles the "Expected 3 fields, saw 4" error
+        # encoding='utf-8' handles special characters in movie titles
+        movies_list_df = pd.read_csv(file_path, on_bad_lines='skip', encoding='utf-8')
+        
+        if not movies_list_df.empty:
+            print(f"✅ {CSV_FILENAME} loaded successfully. Found {len(movies_list_df)} movies.")
+        else:
+            print(f"⚠️ {CSV_FILENAME} loaded but it appears to be empty.")
     else:
         print(f"❌ {CSV_FILENAME} NOT FOUND at {file_path}")
         movies_list_df = pd.DataFrame()
 except Exception as e:
-    print("❌ Error loading movies dataset:", e)
+    print(f"❌ Error loading movies dataset: {e}")
     movies_list_df = pd.DataFrame()
 
 @app.route('/')
