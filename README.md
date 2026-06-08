@@ -2,7 +2,7 @@
 
 A smart movie recommendation system that suggests movies based on the time of the day and human psychology. Instead of asking users to search through hundreds of movies, CineMatch recommends suitable genres according to the selected time period and then displays movies from the chosen genre.
 
-🌐 Live Demo
+🌐 Live Demo: https://movie-recommendation-system-12-8a23.onrender.com
 
 🚀 Try the application here:
 
@@ -188,7 +188,7 @@ Utkarsh
 
 GitHub:
 
-GitHub Profile
+https://github.com/utkarsh-0106
 
 📜 License
 
